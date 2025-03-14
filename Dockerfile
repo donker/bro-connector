@@ -1,5 +1,5 @@
 # Use the official Python runtime image
-FROM python:3.12-alpine
+FROM python:3.12-slim-bookworm
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
 
 # Install GDAL and other dependencies
